@@ -5,7 +5,7 @@ function validateSyntax() {
     //Initialise the result variable
     let result = ''; // Placeholder for validation result
      if (input.indexOf('pet_') !==0) {// Check if the input starts with 'pet_'
-        result = 'Invalid input: Must start with "pet_"';
+        result = 'Invalid input';
         console.log(result);
     } else {
         let remainingString = input.substring(4);
@@ -15,14 +15,13 @@ function validateSyntax() {
             result = 'Vaild input';
             console.log(result);
         } else {
-            result= 'Invalid input: Must contain 4 digits followed by letters with no spaces';
+            result= 'Invalid input';
             console.log(result);
             }
     }    
 
     // TODO: Write your validation logic here
         // Check if input starts with 'pet_' and followed by alphanumeric characters
-
-            document.getElementById('result').innerText = result;
+        document.getElementById('result').innerText = result;
 }
 
